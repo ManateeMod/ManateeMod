@@ -317,5 +317,43 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="AdaBrowser"
+                description="Name for the 'AdaBrowser' extension"
+                id="gui.extension.AdaBrowser.name"
+            />
+        ),
+        extensionId: 'adabrowser',
+        iconURL: 'https://www.adacraft.org/studio/static/assets/40998229311219c2117265d5e4bd9745.png',
+        description: (
+            <FormattedMessage
+                defaultMessage="Interact with the web, taken from AdaCraft."
+                description="Description for the 'AdaBrowser' extension"
+                id="gui.extension.AdaBrowser.description"
+            />
+        ),
+        featured: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Scratch Auth"
+                description="Name for the 'ScratchAuth' extension"
+                id="gui.extension.ScratchAuth.name"
+            />
+        ),
+        extensionId: 'jgScratchAuthenticate',
+        iconURL: 'https://editor.snail-ide.com/static/assets/9d34e28dd3ee4bc95470219ab2173b1f.png',
+        description: (
+            <FormattedMessage
+                defaultMessage="Authenticate with Scratch in your projects, taken from PenguinMod."
+                description="Description for the 'ScratchAuth' extension"
+                id="gui.extension.ScratchAuth.description"
+            />
+        ),
+        featured: true
     }
 ];
