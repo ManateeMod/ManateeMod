@@ -414,9 +414,11 @@ const control = function (isInitialSetup, isStage, targetId, colors) {
         ${blockSeparator}
         <block type="control_if"/>
         <block type="control_if_else"/>
+        <block type="control_for_each"/>
         <block id="wait_until" type="control_wait_until"/>
         <block id="repeat_until" type="control_repeat_until"/>
         ${blockSeparator}
+        <block type="control_all_at_once"/>
         <block type="control_stop"/>
         ${blockSeparator}
         ${isStage ? `
@@ -433,6 +435,9 @@ const control = function (isInitialSetup, isStage, targetId, colors) {
                 </value>
             </block>
             <block type="control_delete_this_clone"/>
+            <block type="control_get_counter"/>
+            <block type="control_incr_counter"/>
+            <block type="control_clear_counter"/>
         `}
         ${categorySeparator}
     </category>
